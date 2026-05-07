@@ -1,6 +1,6 @@
 This is a community tool, not an official Ubiquiti utility. I am sharing
   both the source code and a pre-compiled binary so you can verify what
-  it does before running it. You have three options:
+  it does before running it. You have two options:
 
   ────────────────────────────────────────────────────────────────────────
  
