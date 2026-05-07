@@ -34,9 +34,7 @@ After the transfer is complete, log in to your NAS via SSH. Make sure to grant t
   ────────────────────────────────────────────────────────────────────────
 
   Download:
-    wget -O /tmp/driveScanner \
-
-  [https://github.com/<your-handle>/drive-scanner/releases/download/v1.0/driveScanner_arm64](https://github.com/Holiday-burst/drive-scanner/blob/main/driveScanner_arm64)
+    wget -O /tmp/driveScanner https://github.com/Holiday-burst/drive-scanner/releases/download/a001/driveScanner_arm64
 
   Verify the SHA256 matches:
     echo "7bdb4c60ea819a915a0b452147dd17513f02fbed4e32ddeecc1367e37ee772db
