@@ -11,24 +11,22 @@ This is a community tool, not an official Ubiquiti utility. I am sharing
     [https://github.com/<your-handle>/drive-scanner/blob/main/driveScanner.go](https://github.com/Holiday-burst/drive-scanner/blob/main/driveScanner.go)
 
   Read it first — it's short and there's nothing hidden.
-  Deployment and Execution Guide
-  1. Clone the Repository
-  Open your terminal and run the following commands to download the source code:
-    git clone https://github.com/your-username/drive-scanner
-    cd drive-scanner
-  2. Initialize Go Module
-  If the project does not already contain a go.mod file, initialize it with this command:
-    go mod init drive-scanner
-  3. Build the Executable
-  Compile the Go source code into a binary file:
-    go build -o driveScanner driveScanner.go
-  4. Deploy to NAS via SCP
-  To transfer the compiled binary to your NAS, use the scp command. Please refer to the following usage example:
-  Usage Syntax:
-    scp ./driveScanner [username]@[nas-ip-address]:/[target-directory]
-  Example:
-    # Example: Sending the file to the "admin" user's home folder on the NAS
-    scp ./driveScanner root@192.168.1.100:/tmp
+
+Getting Started
+To begin, open your terminal and clone the repository using the command git clone https://github.com/Holiday-burst/drive-scanner. Once the download is complete, navigate into the project folder by typing cd drive-scanner.
+
+Building the Tool
+Before compiling, you need to prepare the Go environment. If the project doesn't already have a configuration file, initialize it by running go mod init drive-scanner. After initialization, you can build the executable file by executing go build -o driveScanner driveScanner.go. This will generate a binary file named driveScanner in your current directory.
+
+Deploying to NAS
+To move the tool to your NAS, I recommend using the scp command. This allows you to securely transfer the file over your network. The general syntax for this is scp ./driveScanner [username]@[nas-ip-address]:/[target-directory].
+
+For example, if you want to send the file to the temporary folder of a NAS with the IP address 192.168.1.100 using the root account, you would run:
+
+scp ./driveScanner root@192.168.1.100:/tmp
+
+Final Execution
+After the transfer is complete, log in to your NAS via SSH. Make sure to grant the file execution permissions by running chmod +x /tmp/driveScanner. You can then start scanning your drives by executing the program followed by the directory path you wish to analyze.
 
   ────────────────────────────────────────────────────────────────────────
  
