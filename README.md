@@ -3,6 +3,7 @@ This is a community tool, not an official Ubiquiti utility. I am sharing
   it does before running it. You have three options:
 
   ────────────────────────────────────────────────────────────────────────
+ 
   Option A — Compile from source yourself (most transparent)
   ────────────────────────────────────────────────────────────────────────
 
@@ -17,6 +18,7 @@ This is a community tool, not an official Ubiquiti utility. I am sharing
     go build -o driveScanner driveScanner.go
 
   ────────────────────────────────────────────────────────────────────────
+ 
   Option B — Use my pre-built binary
   ────────────────────────────────────────────────────────────────────────
 
@@ -32,6 +34,7 @@ This is a community tool, not an official Ubiquiti utility. I am sharing
   If it doesn't match, do not run it.
 
   ────────────────────────────────────────────────────────────────────────
+ 
   Running the tool (Option A or B)
   ────────────────────────────────────────────────────────────────────────
 
@@ -52,6 +55,7 @@ This is a community tool, not an official Ubiquiti utility. I am sharing
   move them back any time.
 
   ────────────────────────────────────────────────────────────────────────
+  
   What the tool does (verifiable from the source)
   ────────────────────────────────────────────────────────────────────────
 
