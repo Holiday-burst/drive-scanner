@@ -11,11 +11,24 @@ This is a community tool, not an official Ubiquiti utility. I am sharing
     [https://github.com/<your-handle>/drive-scanner/blob/main/driveScanner.go](https://github.com/Holiday-burst/drive-scanner/blob/main/driveScanner.go)
 
   Read it first — it's short and there's nothing hidden.
-
-  Then build:
-    git clone https://github.com/<your-handle>/drive-scanner
+  Deployment and Execution Guide
+  1. Clone the Repository
+  Open your terminal and run the following commands to download the source code:
+    git clone https://github.com/your-username/drive-scanner
     cd drive-scanner
+  2. Initialize Go Module
+  If the project does not already contain a go.mod file, initialize it with this command:
+    go mod init drive-scanner
+  3. Build the Executable
+  Compile the Go source code into a binary file:
     go build -o driveScanner driveScanner.go
+  4. Deploy to NAS via SCP
+  To transfer the compiled binary to your NAS, use the scp command. Please refer to the following usage example:
+  Usage Syntax:
+    scp ./driveScanner [username]@[nas-ip-address]:/[target-directory]
+  Example:
+    # Example: Sending the file to the "admin" user's home folder on the NAS
+    scp ./driveScanner root@192.168.1.100:/tmp
 
   ────────────────────────────────────────────────────────────────────────
  
