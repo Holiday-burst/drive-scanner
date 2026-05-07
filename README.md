@@ -72,7 +72,6 @@ After the transfer is complete, log in to your NAS via SSH. Make sure to grant t
 
     - Walks the photo backup folder you give it
     - For each .heic/.heif/.jpg/.jpeg/.png/.tif file, runs imagemeta.Decode
-      (the same library unifi-drive uses internally) inside a recover()
     - Prints any file that triggers a panic
     - With -quarantine, moves problem files out (no deletion)
 
