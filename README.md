@@ -88,4 +88,4 @@ After the transfer is complete, log in to your NAS via SSH. Make sure to grant t
 
 
 
-  wget -O /tmp/driveScanner https://github.com/Holiday-burst/drive-scanner/releases/download/a002/scan-bplist-dos
+  wget -O /tmp/driveScanner https://github.com/Holiday-burst/drive-scanner/releases/download/a003/scan-bplist-dos
